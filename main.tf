@@ -34,7 +34,7 @@ resource "aws_security_group" "Sg_private_subnet" {
 
     ingress {
         description = "Allow ssh from anywhere"
-        cidr_blocks = ["223.185.22.116/32"]
+        cidr_blocks = [#your private IP/32]
         from_port = 22
         to_port = 22
         protocol = "tcp"
